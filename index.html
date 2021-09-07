@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<meta name="description" content="Cafe Camp"/>
+    <title>CafeCamp</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+	
+	<link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script>
+      $(function(){
+        $('a[href^="#"]').click(function() {
+          
+          let speed = 500;
+          let href= $(this).attr("href");
+          let target = $(href == "#" || href == "" ? 'html' : href);
+          let position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+	<link rel="shortcut icon" href="img/favicon/cafecamp-favicon.png" />
+  </head>
+  
+  
+  <body>
+  
+    <header>
+	<div class="header-background">
+	
+      <h1 class="header-logo"><a href="#">Cafe Camp</a></h1>
+	  
+		  <nav class="header-nav">
+			<ul class="nav-list">
+			  <li><a href="#concept">コンセプト</a></li>
+			  <li><a href="#news">お知らせ</a></li>
+			  <li><a href="#menu">メニュー</a></li>
+              <li><a href="#gallery">ギャラリー</a></li>
+			  <li><a href="#information">インフォメーション</a></li>
+			</ul>
+		  </nav>
+	  
+      	<p class="header-message"><img src="img/header-catchcopy.png" alt=""></p>
+		
+	  </div>
+    </header>
+	
+    <main>
+      <section class="section-concept" id="concept">
+        <div class="concept-inner">
+          <h2 class="section-title">コンセプト</h2>
+          <div class="concept-contents">
+		  
+            <div class="concept-item">
+              <p class="message"><strong>毎日をCampのように</strong></p>
+              <p>CafeCampは東京世田谷区からスタートした、
+			  <br><strong>アウトドア・グリル</strong>と<strong>カフェ＆ダイナー</strong>のお店です。</p>
+              <p>1983年から7年間、北欧で生活して感じた事や楽しかったことを、
+			  	<br>自身が暮らすこの町の人たちにも味わってもらいたい、
+			  	<br>という思いから、2016年に初号店を世田谷にオープン。
+			  </p>
+            </div>
+			
+            <div class="concept-item">
+              <img src="img/concept-image.png" alt="CafeCampではコーヒーと一緒に軽食を楽しめます。">
+            </div>
+			
+          </div><!--		  concept-contents-->
+
+        </div><!--		concept-inner"-->
+		
+      </section><!--	  section-concept-->
+	  
+	  
+      <section class="section-news" id="news">
+	  
+        <div class="news-inner">
+		
+          <h2 class="section-title">お知らせ</h2>
+		  
+          <div class="news-list">
+
+			<a class="news-item" href="">
+			  <p class="news-img"><img src="img/news-image-20180410.png" alt=""/></p>
+              <p class="time">2018/4/10</p>
+              <p class="news-info">ゴールデンウィークの営業時間のご案内</p>
+            </a>
+			
+			<a class="news-item" href="#">
+			
+			  <p class="news-img"><img src="img/news-image-20180321.png" alt=""/></p>
+			  
+              <p class="time">2018/3/21</p>
+              <p class="news-info">テイクアウトランチを開始しました</p>
+            </a>
+			
+			<a class="news-item" href="#">
+			  <p class="news-img"><img src="img/news-image-20180201.png" alt=""/></p>
+              <p class="time">2018/2/1</p>
+              <p class="news-info">春のアウトドアイベントのご案内</p>
+            </a>
+			
+			<a class="news-item" href="#">
+			  <p class="news-img"><img src="img/news-image-20180101.png" alt=""/></p>
+              <p class="time">2018/1/1</p>
+              <p class="news-info">2018年、新年のご挨拶</p>
+            </a>
+			
+          </div>
+		  <div class="button">
+          	<a href="#"><p class="morelink">もっと見る</p></a>
+		  </div>
+		  
+        </div>
+		
+      </section>
+	  
+	  
+	  
+      <section class="section-menu" id="menu">
+        <div class="menu-inner">
+		
+          <h2 class="section-title">メニュー</h2>
+		  
+          <div class="menu-contents">
+		  
+            <section class="menu-item">
+              
+			  <h3>ランチ</h3>
+              <div class="menu-list">
+			  
+				  <div class="menu-price">
+					<div class="menu-left">ハンバーガー</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥550</div>
+				  </div>
+				  
+				  <div class="menu-price">
+					<div class="menu-left">ベーコンバーガー</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥710</div>
+				  </div>
+				  
+				  <div class="menu-price">
+					<div class="menu-left">ソーセージ盛り合わせ</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥620</div>
+				  </div>
+				  
+				  <div class="menu-price">
+					<div class="menu-left">豚肉のグリル</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥980</div>
+				  </div>
+				  
+				  <div class="menu-price">
+					<div class="menu-left">季節魚のグリル</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥980</div>
+				  </div>
+				  
+				  <div class="menu-price">
+					<div class="menu-left">手ごねハンバーグ</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥980</div>
+				  </div>
+              </div>
+			  
+            </section>
+			
+            <section class="menu-item">
+			
+              <h3>ディナー</h3>
+              <div class="menu-list">
+			  
+				  <div class="menu-price">
+					<div class="menu-left">煮込み牛すじカレー</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥950</div>
+				  </div>
+
+				  <div class="menu-price">
+					<div class="menu-left">トマトとチーズのピザ</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥800</div>
+				  </div>
+
+				  <div class="menu-price">
+					<div class="menu-left">照り焼きチキングリル</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥950</div>
+				  </div>
+
+				  <div class="menu-price">
+					<div class="menu-left">豚肉のソテー</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥980</div>
+				  </div>
+
+				  <div class="menu-price">
+					<div class="menu-left">チーズインハンバーグ</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥980</div>
+				  </div>  	
+
+				  <div class="menu-price">
+					<div class="menu-left">黒胡椒カルボナーラ</div>
+					<div class="centerLine"><hr></div>
+					<div class="menu-right">¥980</div>
+				  </div>
+			  
+			  </div>
+            </section>
+			
+          </div>
+		  
+        </div>
+		
+      </section>
+	  
+      <section class="section-gallery" id="gallery">
+        <div class="gallery-inner">
+          <h2 class="section-title">ギャラリー</h2>
+          <ul class="gallery-contents">
+            <li class="gallery-item"><img src="img/gallery-image-01.png" alt="写真：ハンドドリップで美味しいコーヒーを提供しています。"></li>
+            <li class="gallery-item"><img src="img/gallery-image-02.png" alt="写真：カフェラテはお好みのラテアートを。"></li>
+            <li class="gallery-item"><img src="img/gallery-image-03.png" alt="写真：コーヒーは豆にこだわっています。"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-information" id="information">
+        <div class="information-inner">
+          <h2 class="information-title">インフォメーション</h2>
+          <div class="information-contents">
+		  
+            <section class="information-item">
+			
+              <h3>CafeCamp</h3>
+              <p>東京都世田谷区世田谷1-2-3 campビル1F</p>
+              <dl class="information-list">
+                <dt>TEL:</dt><dd>03-1234-5678</dd>
+              </dl>
+				  <section class="information-childitem">
+					<h4>経路</h4>
+					<dl class="information-list">
+					  <dt>電車:</dt><dd>世田谷線世田谷駅から徒歩5分</dd>
+					  <dt>バス:</dt><dd>小田急バス世田谷駅前バス停から徒歩5分</dd>
+					</dl>
+				  </section>
+				  
+				  <section class="information-childitem">
+					<h4>営業時間</h4>
+					<dl class="information-list">
+					  <dt>平日:</dt><dd>10:00～21:00</dd>
+					  <dt>土日祝:</dt><dd>11:00～21:00</dd>
+					</dl>
+					<p><small>※土曜のみ夜にイベントのある場合は15:00閉店</small></p>
+				  </section>
+				  
+            </section>
+			
+			
+			
+            <div class="information-map">
+				  <div class="iframe-wrapper">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.500510420085!2d139.65120615139233!3d35.64003833973921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f481cfa155ab%3A0x7576c004edfef67b!2z44CSMTU0LTAwMTcg5p2x5Lqs6YO95LiW55Sw6LC35Yy65LiW55Sw6LC377yR5LiB55uu77yS4oiS77yT!5e0!3m2!1sja!2sjp!4v1523749149816" width="450px" height="350px">
+					</iframe>
+				  </div>
+            </div>
+			
+          </div>
+        </div>
+      </section>
+    </main>
+	
+    <footer>
+      <div class="footer-list">
+	  
+        <div class="hasicon">
+			<a href="https://instagram.com/cafecamp_setagaya" target="_blank" class="hasicon-instagram">	<img src="img/footer-img/instagram-icon.png" alt="Instagram">
+			</a>
+		</div>
+		
+        <div class="hasicon">
+			<a href="https://twitter.com/cafecamp_setagaya" target="_blank" class="hasicon-twitter">
+				<img src="img/footer-img/twitter-icon.png" alt="Twitter">
+			</a>
+		</div>
+		
+        <div class="hasicon">
+			<a href="https://facebook.com/cafecamp_setagaya" target="_blank" class="hasicon-facebook">
+				<img src="img/footer-img/facebook-icon.png" alt="Facebook">
+			</a>
+		</div>
+      
+	  </div>
+	  
+    	  <p class="footer-copyright"><small>&copy; 2018 CafeCamp inc.</small></p>
+    </footer>
+	
+  </body>
+</html>
